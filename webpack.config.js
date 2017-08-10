@@ -40,6 +40,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
+            inject: 'head',
             filename: "index.html",
             template: "src/raw-index.html"
         })
