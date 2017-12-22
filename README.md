@@ -2,7 +2,7 @@
 
 ## Description
 
-Getting the hang for A-frame and more three.js development. Building a simple terrain.
+Getting the hang for A-frame and more three.js development. Building a simple poly terrain.
 
 <hr>
 
@@ -10,26 +10,30 @@ Getting the hang for A-frame and more three.js development. Building a simple te
 
 To install the Node dependencies:
 
-    npm install
+> npm install
 
 
 ## Development
 
 To serve the site from a simple Node development server:
 
-    npm run dev via webpack-dev-server
+> npm run dev
 
 ## Build
 
 To build source files:
-	
-	npm run build
+
+> npm run build
 
 ## Run
 
 To run on a simple express server after build:
-	
-	npm run start (localhost:8000)
+
+> npm run start
+
+## Demo
+
+Live demo [https://exactlyallan.github.io/A-frame-experiment-1-terrain/](https://exactlyallan.github.io/A-frame-experiment-1-terrain/)
 
 
 ## License

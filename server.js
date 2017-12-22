@@ -11,7 +11,7 @@ app.set('port', 8000);
 
 // Define the public static folder
 // Note do not specify '/public' or it will mess up directory structure 
-app.use(express.static(path.join(__dirname + '/public')));
+app.use(express.static(path.join(__dirname + '/docs')));
 
 //CORS middleware
 app.use(function(req, res, next) {
@@ -20,7 +20,7 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.use(favicon(path.join(__dirname, '/public/img', 'favicon.ico')));
+app.use(favicon(path.join(__dirname, '/docs/img', 'favicon.ico')));
 
 
 
