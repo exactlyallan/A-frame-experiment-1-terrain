@@ -1,18 +1,32 @@
-// Enable .html reloading for dev
-require('./raw-index.html')
+/* index */
 
-// Get Styles
-require('./styles/app.scss')
+import AFRAME from "aframe";
+import "./style.css";
 
-// A-Frame Requried in Head, import components here
-console.log("Starting Custom Aframe Code...")
-
-require('./components/terrain-component.js')
+console.log("ready...")
 
 
-setTimeout(function(){
+/*
+AFRAME.registerComponent('foo', {
+  schema: {
+    bar: {type: 'number'},
+    baz: {type: 'string'}
+  },
 
-	var terrain = document.querySelector('.terrain');
-	terrain.setAttribute('terrain', {color: 'blue', width: 100, depth: 100})
+  init: function () {
+    // Do something when component first attached.
+  },
 
-}, 2000)
+  update: function () {
+    // Do something when component's data is updated.
+  },
+
+  remove: function () {
+    // Do something the component or its entity is detached.
+  },
+
+  tick: function (time, timeDelta) {
+    // Do something on every scene tick or frame.
+  }
+});
+*/

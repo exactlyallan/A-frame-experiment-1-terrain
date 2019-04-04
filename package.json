@@ -1,37 +1,40 @@
 {
-  "name": "vr-terrain",
-  "version": "0.0.1",
-  "description": "a-frame terrain code sketch",
-  "main": "index.js",
+  "name": "a-frame-exp1-terrain",
+  "version": "1.0.0",
+  "description": "a-frame experiment 1 low poly terrain",
+  "main": "/docs/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server ./src/index.js --port 8000",
-    "build": "webpack --config webpack.config.prod.js",
-    "start": "node server.js"
+    "build": "NODE_ENV=\"production\" webpack --config webpack.config.js --mode=production",
+    "dev": "NODE_ENV=\"development\" webpack-dev-server --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exactlyallan/A-frame-experiment-1-terrain.git"
   },
   "keywords": [
-    "a-frame",
-    "vr",
-    "terrain"
+    "a-frame"
   ],
   "author": "exactly.allan@gmail.com",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/exactlyallan/A-frame-experiment-1-terrain/issues"
+  },
+  "homepage": "https://github.com/exactlyallan/A-frame-experiment-1-terrain#readme",
   "devDependencies": {
-    "style-loader": "^0.18.2",
-    "webpack": "^3.4.1",
-    "webpack-dev-server": "^2.6.1"
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^2.0.1",
+    "css-loader": "^2.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
-    "aframe": "^0.6.1",
-    "css-loader": "^0.28.4",
-    "express": "^4.15.3",
-    "extract-text-webpack-plugin": "^3.0.0",
-    "file-loader": "^0.11.2",
-    "html-loader": "^0.5.0",
-    "html-webpack-plugin": "^2.30.1",
-    "improved-noise": "0.0.3",
-    "node-sass": "^4.5.3",
-    "sass-loader": "^6.0.6",
-    "serve-favicon": "^2.4.3"
+    "aframe": "^0.9.0"
   }
 }

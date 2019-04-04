@@ -6,30 +6,17 @@ Getting the hang for A-frame and more three.js development. Building a simple po
 
 <hr>
 
-## Installation
+## Notes
 
 To install the Node dependencies:
-
 > npm install
 
+To run locally:
+> npm run
 
-## Development
+To run webpack dever server:
+> npm run-dev
 
-To serve the site from a simple Node development server:
-
-> npm run dev
-
-## Build
-
-To build source files:
-
-> npm run build
-
-## Run
-
-To run on a simple express server after build:
-
-> npm run start
 
 ## Demo
 
