@@ -10,8 +10,9 @@
 <body>
   test
     <a-scene background="color: #ECECEC">
-        <a-box position="0 0 0" rotation="0 45 0" color="#4CC3D9"></a-box>
-    </a-scene>
+      <a-entity camera look-controls wasd-controls position="0 1.6 0"></a-entity>
+      <a-entity id="terrain"  rolling-terrain="radius:5; height:32; radialSegments:64; heightSegments:32; color:#2194ce;" position="0 -20 -10"></a-entity>
+    </a-scene>  
 </body>
 
 </html>

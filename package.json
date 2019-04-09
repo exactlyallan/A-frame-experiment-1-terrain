@@ -35,6 +35,7 @@
     "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
-    "aframe": "^0.9.0"
+    "aframe": "^0.9.0",
+    "simplex-noise": "^2.4.0"
   }
 }
